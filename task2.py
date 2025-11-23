@@ -3,7 +3,7 @@ from collections import deque
 
 def is_palindrome(text: str) -> bool:
     # Keep only alphanumeric characters in lowercase
-    cleaned = "".join(ch.lower() for ch in text if ch.isalnum())   
+    cleaned = "".join(ch.lower() for ch in text if ch.isalnum())
     # Load characters into deque
     d = deque(cleaned)
 
